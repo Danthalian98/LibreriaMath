@@ -44,10 +44,14 @@ void Math::Cos() {
 
 void Math::Tan() {
 	cout << "introduzca el angulo a calcular" << endl;
-	cin >> grados;
-	Sen();	Cos();
+	cin >> g;
+	temp = ((4 * g * (180 - g)));
+	seno = temp / (40500 - (g * (180 - g)));
+	grados = 90 - g;
+	temp = ((4 * grados * (180 - grados)));
+	coseno = temp / (40500 - (grados * (180 - grados)));
 	tang = seno / coseno;
-	cout << "La tangente de: " << grados << " es: " << tang << endl;
+	cout << "La tangente de: " << g << " es: " << tang << endl;
 }
 
 void Math::Matriz() {
