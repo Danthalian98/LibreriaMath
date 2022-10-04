@@ -8,20 +8,15 @@ public:
 	void Cos();
 	void Tan();
 	void Matriz();
-	double grados;
-	double g;
+	double grados;	double g;
 private:
-	long double seno; 
-	long double coseno;
-	long double temp;
-	long double tang;
+	long double seno; 	long double coseno;	long double temp; long double tang;
 	int x;	int y;
 	int x2;	int y2;
 };
 
 Math::Math(){
-	seno = 0; coseno = 0; tang = 0; temp = 0;
-	grados = 0; g = 0;
+	seno = 0; coseno = 0; tang = 0; temp = 0; grados = 0; g = 0;
 	x = 0;	y = 0;	x2 = 0;	y2 = 0;
 }
 
@@ -66,7 +61,6 @@ void Math::Matriz() {
 	cout << endl;
 
 	int matriz[5][5][3];
-
 	if (x >= 5 || y >= 5) {
 		cout << "El tamano maximo es de 5" << endl;
 	}else if(y==x2){
@@ -84,7 +78,6 @@ void Math::Matriz() {
 				cin >> matriz[i][j][1];
 			}
 		}
-
 		for (int i = 0; i < x; i++) {
 			for (int j = 0; j < y2; j++) {
 				matriz[i][j][2] = 0;
@@ -100,11 +93,7 @@ void Math::Matriz() {
 			}
 			cout << endl;
 		}
-
 	}else {
 		cout << "El largo de las columnas de la M1 y las filas del M2 deben ser iguales" << endl;
 	}
-
-
 }
-
